@@ -10,7 +10,7 @@ const client = new Client({
 client.once('ready', () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
 
-  cron.schedule('0 5 * * *', async () => {
+  cron.schedule('19 9 * * *', async () => {
     const channelIds = process.env.CHANNEL_IDS.split(',');
 
     const today = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
